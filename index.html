@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Pig Latin Translater</title>
+  <title>Pig Latin Translator</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pig Latin Translator</h1>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <form id="translate-form">
+              <label for="to-translate"><h3>Enter text to be translated:</h3></label>
+              <textarea id="to-translate"></textarea>
+              <button type="submit" class="btn btn-dark">anslateTray!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body" id="translated-text">
+            <h3>Anslationtray:</h3>
+            <!--insert translated text here with js-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
