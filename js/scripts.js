@@ -15,16 +15,13 @@ function ruleFinder(word) {
   if (typeof word !== 'string') {
     return -1;
   }
-
   word = word.toLowerCase();
   if (vowels.includes(word[0])) {
     return 1;
   }
-
   if (word.length === 1) {
     return 2;
   }
-
   for (let i = 0; i < word.length; i++) {
    if (word.length-1 === i) {
      return 2;
